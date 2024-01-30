@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Ratz</title>
+    <link rel="icon" type="image/x-icon" href="mov03.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://www.jquery-az.com/javascript/alert/dist/alertify.min.js"></script>
+    <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/alertify.core.css" />
+    <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/alertify.custom.css" id="toggleCSS" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script>
+          function promalert(){
+          alertify.prompt("Your Name please?", function (e, useremail) {
+              
+              if (e) {
+                  alertify.alert("Welcome to Movie Ratz  </BR>" + useremail);
+              } else {
+                  alertify.alert("You cancelled the task!");
+              }
+          }, "Enter your name ");
+          }
+          </script>
+
+<style>
+  body{
+    background-repeat:no-repeat;
+      background-size: cover;
+  }
+  p{
+    color: darkorange;
+  }
+</style>
+  </head>
+
+  <body onload="promalert()" style="background-color: aliceblue;" background="Imgs/tthd7.jpg"  >
+    
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+
+            </button>
+            <a class="navbar-brand" href="Bootsweb.html">Movie Ratz</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="Bootsweb.html">Home</a> </li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      </ul>
+
+                    </ul>
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                          <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                              <button type="submit" class="btn btn-default">Submit</button>
+                                                  </form>
+
+    </div>
+</nav>
+<br><br><br><br>
+<div class="container">
+
+    <a href="#PM"><p style= "color: red; font-size:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Popular Movies</p></a>
+    <div class="row">
+        <div class="col-md-3">
+            <a href="#" target="_blank">
+              <img src="slid3.jpg" alt="Lights" width="100%" height="150px">
+              <div style="text-align:center;"class="caption">
+                <br>  <p>Soorari potru</p>
+              </div>
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <div class="img-responsive">
+              <a href="#" target="_blank">
+                <img class="img-responsive" src="Imgs/t1.jpg" alt="Lights" width="100%" height="350px">
+                <div style="text-align:center;"class="caption">
+                    <br>  <p>Writer</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="img-responsive">
+              <a href="#" target="_blank">
+                <img class="img-responsive" src="Imgs/t2.jpg" alt="Lights" width="100%" height="300px">
+                <div style="text-align:center;"class="caption">
+                    <br>   <p>Mahaan</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+           
+              <a href="#" target="_blank">
+                <img class="img-responsive" src="Imgs/t3.jpg" alt="Lights" width="100%" height="300px">
+                <div style="text-align:center;" class="caption">
+                    <br>    <p >Karnan</p>
+                </div>
+              </a>
+            
+          </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <a href="#" target="_blank">
+          <img  src="Imgs/t7.jpg" alt="Lights" width="100%" height="150px">
+          <div style="text-align:center;"class="caption">
+            <br>  <p>Maanadu</p>
+          </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <div class="img-responsive">
+          <a href="#" target="_blank">
+            <img class="img-responsive" src="Imgs/t4.jpg" alt="Lights" width="100%" height="350px">
+            <div style="text-align:center;"class="caption">
+                <br> <p>Annatha</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+       
+          <a href="#" target="_blank">
+            <img  src="Imgs/t9.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;"class="caption">
+                <br> <p>Doctor</p>
+            </div>
+          </a>
+      </div>
+
+      <div class="col-md-3">
+       
+          <a href="#" target="_blank">
+            <img  src="Imgs/t6.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;" class="caption">
+              <br><p >Intru Netru Naalai</p>
+            </div>
+          </a> 
+      </div>
+</div>
+<a href="#TN"> <p style= "color: red; font-size:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Trending now</p></a>
+
+<div class="row">
+    <div class="col-md-3">
+        <a href="#" target="_blank">
+          <img src="Imgs/t11.jpg" alt="Lights" width="100%" height="150px">
+          <div style="text-align:center;"class="caption">
+            <br><p>Beast</p>
+          </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+          <a href="#" target="_blank">
+            <img  src="Imgs/t7.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;"class="caption">
+                <br>  <p>Maanadu</p>
+            </div>
+          </a>
+      </div>
+
+      <div class="col-md-3">
+          <a href="#" target="_blank">
+            <img src="Imgs/q1.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;"class="caption">
+                <br><p>Kings Man</p>
+            </div>
+          </a>
+        </div>
+    
+
+      <div class="col-md-3">
+       
+          <a href="#" target="_blank">
+            <img  src="Imgs/t8.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;" class="caption">
+                <br> <p >I</p>
+            </div>
+          </a>
+        
+      </div>
+</div>
+
+<div class="row">
+<div class="col-md-3">
+    <a href="#" target="_blank">
+      <img  src="Imgs/t9.jpg" alt="Lights" width="100%" height="150px">
+      <div style="text-align:center;"class="caption">
+        <br>  <p>Doctor</p>
+      </div>
+    </a>
+</div>
+
+<div class="col-md-3">
+      <a href="#" target="_blank">
+        <img  src="Imgs/t10.jpg" alt="Lights" width="100%" height="150px">
+        <div style="text-align:center;"class="caption">
+            <br> <p>Kaaka muttai</p>
+        </div>
+      </a>
+  </div>
+
+  <div class="col-md-3">
+      <a href="#" target="_blank">
+        <img  src="Imgs/t11.jpg" alt="Lights" width="100%" height="150px">
+        <div style="text-align:center;"class="caption">
+            <br> <p>Beast</p>
+        </div>
+      </a>
+  </div>
+
+  <div class="col-md-3">
+   
+      <a href="#" target="_blank">
+        <img  src="Imgs/t2.jpg" alt="Lights" width="100%" height="150px">
+        <div style="text-align:center;" class="caption">
+          <br><p >Mahaan</p>
+        </div>
+      </a> 
+  </div>
+</div>
+
+<a href="#TN"> <p style= "color: red; font-size:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Featured Today</p></a>
+
+<div class="row">
+    <div class="col-md-3">
+        <a href="#" target="_blank">
+          <img src="Imgs/h4.jpg" alt="Lights" width="100%" height="150px">
+          <div style="text-align:center;"class="caption">
+            <br><p>The Conjuring </p>
+          </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+          <a href="#" target="_blank">
+            <img  src="Imgs/t1.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;"class="caption">
+                <br>  <p>  Writer</p>
+            </div>
+          </a>
+      </div>
+
+      <div class="col-md-3">
+          <a href="#" target="_blank">
+            <img src="Imgs/t2.jpg" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;"class="caption">
+                <br><p>Mahaan</p>
+            </div>
+          </a>
+        </div>
+    
+
+      <div class="col-md-3">
+       
+          <a href="#" target="_blank">
+            <img  src="Imgs/h1.webp" alt="Lights" width="100%" height="150px">
+            <div style="text-align:center;" class="caption">
+                <br> <p >Pirates of Cariibean</p>
+            </div>
+          </a>
+        
+      </div>
+</div>
+
+<div class="row">
+<div class="col-md-3">
+    <a href="#" target="_blank">
+      <img  src="Imgs/h2.jpg" alt="Lights" width="100%" height="150px">
+      <div style="text-align:center;"class="caption">
+        <br>  <p>  Avengers      </p>
+      </div>
+    </a>
+</div>
+
+<div class="col-md-3">
+      <a href="#" target="_blank">
+        <img  src="Imgs/h3.jpg" alt="Lights" width="100%" height="150px">
+        <div style="text-align:center;"class="caption">
+            <br> <p>   Titanic </p>
+        </div>
+      </a>
+  </div>
+
+  <div class="col-md-3">
+      <a href="#" target="_blank">
+        <img  src="Imgs/h4.jpg" alt="Lights" width="100%" height="150px">
+        <div style="text-align:center;"class="caption">
+            <br> <p> The Conjuring </p>
+        </div>
+      </a>
+  </div>
+
+  <div class="col-md-3">
+   
+      <a href="#" target="_blank">
+        <img  src="Imgs/h5.jpg" alt="Lights" width="100%" height="150px">
+        <div style="text-align:center;" class="caption">
+          <br><p >Jumanji</p>
+        </div>
+      </a> 
+  </div>
+</div>
+<a href="https://kuttymovies.co.com/"> <p style= "color: red; font-size:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Exclusive videos  </p></a>
+<a href="#TN"> <p style= "color: red; font-size:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Explore Movies & TV shows </p></a>
+<a href="#TN"> <p style= "color: red; font-size:30px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >More to watch </p></a>
+<p>
+Cinema Ratz helps you select the perfect next show or movie to watch.
+</p>
+
+
+
+</div>
+</body>
+<section class="news">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-13 m-auto text-center">
+              <h1>Join To Movie Ratz Society</h1>
+              <input type="text" placeholder="Enter Your Email">
+              <button class="btn2">Submit</button><br><br>
+          </div>
+<br>
+      </div>
+      <div class="row">
+          <div class="col-lg-11">
+              <div class="row">
+                  <div class="col-lg-3">
+                      <h5 class="pb-3">CUSTOMER CARE</h5>
+                      <p>Regular</p>
+                      <p>Onyime</p>
+                      <p>Always Care</p>
+                  </div>
+                  <div class="col-lg-3">
+                      <h5 class="pb-3">FAQ'S</h5>
+                      <p>No charges</p>
+                      <p>Search anytime</p>
+                      <p>Always Care</p>
+                  </div>
+                  <div class="col-lg-3">
+                      <h5 class="pb-3">CUSTOMER CARE</h5>
+                      <p>Regular</p>
+                      <p>Onyime</p>
+                      <p>Always Care</p>
+                  </div>
+                  <div class="col-lg-3">
+                      <h5 class="pb-3">SOCIAL MEDIA</h5>
+                    <span> <i class="fab fa-facebook"> </i></span>
+                    <span> <i class="fab fa-instagram"> </i></span>
+                    <span> <i class="fab fa-twitter"> </i></span>
+                     
+                  </div>
+              </div>
+          </div>
+       </div>
+  </div>
+<hr>
+<p class="text-center">Copyright @2022 All rights reserved | This website is crested by MovieRatz</p>
+</section>
+
+</html>

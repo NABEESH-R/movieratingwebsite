@@ -1,1 +1,1 @@
-# movieratingwebsite
+# Simple_Movie_Rating_website

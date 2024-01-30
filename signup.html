@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Ratz</title>
+    <link rel="icon" type="image/x-icon" href="mov03.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+    <script src="https://www.jquery-az.com/javascript/alert/dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/sweetalert.css">
+    <script type="text/javascript">
+       function JSalert(){
+	swal("Congrats!", "Your account is created!", "success");
+}
+     
+var itemForm = document.getElementById('itemForm'); // getting the parent container of all the checkbox inputs
+        var checkBoxes = itemForm.querySelectorAll('input[type="checkbox"]'); // get all the check box
+        document.getElementById('submit').addEventListener('click', getData); //add a click event to the save button
+
+        let result = [];
+
+        function getData() { // this function will get called when the save button is clicked
+            result = [];
+            checkBoxes.forEach(item => { // loop all the checkbox item
+                if (item.checked) {  //if the check box is checked
+                    let data = {    // create an object
+                        item: item.value,
+                        selected: item.checked
+                    }
+                    result.push(data); //stored the objects to result array
+                }
+            })
+            document.querySelector('.result').textContent = JSON.stringify(result); // display result
+        }
+        </script>
+
+<script>
+    function tcheck()
+    {
+        var s=document.getElementById("email");
+         if(s.value.length==0 || !(s.value.includes('@')))
+        {
+            alert("Enter a valid Email id");
+            return false;
+        }
+    }
+</script>
+    
+</head>
+<style>
+    body{
+      background-repeat:no-repeat;
+        background-size: cover;
+    }
+    .header {
+        text-align: center;
+        background-color: rgb(72, 179, 10);
+        color: white;
+        padding: 10px;
+    }
+
+    .wrapper {
+        width: 20%;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgb(54, 54, 54);
+        overflow: hidden;
+    }
+
+    .item {
+        padding: 10px;
+        margin-left: 40px;
+    }
+
+    button {
+        display: block;
+        margin: 10px auto;
+        outline: none;
+        padding: 12px;
+        border: none;
+        background-color: rgb(72, 179, 10);
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .result {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<body style="background-color: aliceblue;" background="Imgs/c8.jpg">
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse">
+    
+                </button>
+                <a class="navbar-brand" href="Bootsweb.html">Movie Ratz</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li ><a href="Bootsweb.html">Home</a> </li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                          </ul>
+    
+                        </ul>
+                        <form class="navbar-form navbar-right" action="/action_page.php">
+                              <div class="form-group">
+                                      <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                                  <button type="submit" class="btn btn-default">Submit</button>
+                                                      </form>
+    
+        </div>
+    </nav>
+
+
+   
+    <p class="result"></p>
+
+    <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                                    
+                            <div class="form-group">
+                                <label for="email" class="col-md-3 control-label">Email</label>
+                                <div class="col-md-9">
+                                    <input type="text" id="email" class="form-control" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                                
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-md-3 control-label">Password</label>
+                                <div class="col-md-9">
+                                    <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                </div>
+                            </div>
+                                    
+
+                                
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group">
+                                        <!-- Button -->                                        
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button id="btn-signup" value="submit" onclick="tcheck()" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                            <span style="margin-left:8px;">or</span>  
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                        
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button id="btn-fbsignup" type="button" class="btn btn-primary"><i class="icon-facebook"></i>   Sign Up with Facebook</button>
+                                        </div>                                           
+                                            
+                                    </div>   
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+    </div>
+    
+
+</body>
+</html>
